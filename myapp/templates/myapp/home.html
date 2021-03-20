@@ -1,0 +1,6 @@
+<a href="{% url 'home' %}">Home</a>|<a href="{% url 'about' %}">About</a>
+<h1>Home</h1>
+
+{% for post in Posts %}
+  {{post.text}}
+{% endfor %}
